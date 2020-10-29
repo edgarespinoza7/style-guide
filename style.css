@@ -1,151 +1,187 @@
+/* Global Styles */
+
 body {
-    font-family: 'Noto Sans', sans-serif;
-    margin: 3%;
-}    
+  font-family: "Noto Sans", sans-serif;
+  margin: 3%;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-bottom: 60px;
+}
 
 h4 {
     font-size: 1.2rem;
-    
-}
+  }
 
-/* COLORS SECTION */
+
+  /* COLORS SECTION */
 
 .color-square {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
+  min-width: 20%;
+  width: 200px;
+
+  height: 300px;
 }
 
 #colors {
-    display: flex;
-    align-items: center;
-    justify-content: stretch;
+  display: flex;
+  justify-content: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
 }
 
-
 #raspberry-light {
-    background-color:#F24464;
-    width: 100%;
-    height: 300px;
+  background-color: #f24464;
 }
 
 #raspberry-dark {
-    background-color:#BF3952;
-    width: 100%;
-    height: 300px;
+  background-color: #bf3952;
 }
 
 #blue-marine {
-    background-color:#0339A6;
-    width: 100%;
-    height: 300px;
+  background-color: #0339a6;
 }
 
 #dark-blue {
-    background-color:#022873;
-    width: 100%;
-    height: 300px;
+  background-color: #022873;
 }
 
 #salmon {
-    background-color:#F2CBC2;
-    width: 100%;
-    height: 300px;
+  background-color: #f2cbc2;
 }
 
 .color-description {
-    padding-top: 20%;
+  padding-top: 20%;
 }
 
 /* FONTS SECTION */
 
 #fonts {
-    display: flex;
-    align-items: center;
-    justify-content: stretch;
-}
-
-#poppins-subtitle {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    padding: 10px 0;
-    text-decoration:underline; 
-
-}
-
-#poppins-400 {
-    font-size: 1.5rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-}
-
-#poppins-600 {
-    font-size: 1.5rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-}
-
-#poppins-800 {
-    font-size: 1.5rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-}
-
-#roboto-subtitle {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    padding: 10px 0;
-    text-decoration:underline
-}
-
-#roboto-400 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-#roboto-500 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-#roboto-700 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: stretch;
+  margin-bottom: 60px;
 }
 
 #poppins {
     background-color: rgba(248, 248, 248, 0.973);
     padding: 3%;
-    width: 100%;
-    height: 300px;
+    width: 50%;
+    min-height: 300px;
+  }
+  
+  #roboto {
+    background-color: #faedef;
+    padding: 3%;
+    width: 50%;
+    min-height: 300px;
+  }
+
+.font-poppins {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
 }
 
-#roboto {
-    background-color: rgba(248, 248, 248, 0.973);
-    padding: 3%;
-    width: 100%;
-    height: 300px;
+#poppins-subtitle {
+  font-weight: 400;
+  padding: 10px 0;
+  text-decoration: underline;
 }
+
+#poppins-400 {
+  font-weight: 400;
+}
+
+#poppins-600 {
+  font-weight: 600;
+}
+
+#poppins-800 {
+  font-weight: 800;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+#roboto-subtitle {
+  
+  font-weight: 400;
+  padding: 10px 0;
+  text-decoration: underline;
+}
+
+#roboto-400 {
+  
+  font-weight: 400;
+}
+
+#roboto-500 {
+  
+  font-weight: 500;
+}
+
+#roboto-700 {
+  
+  font-weight: 700;
+}
+
+/* Text Styles Section */
 
 #text-styles h1 {
-    font-family: 'Poppins';
-    font-size: 48px;
-    font-weight: 600;
+  font-family: "Poppins";
+  font-size: 48px;
+  font-weight: 600;
 }
 
 #text-styles h2 {
-    font-family: 'Poppins';
-    font-size: 24px;
-    font-weight: lighter;
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: lighter;
+  color: gray;
 }
 
 #text-styles p {
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-weight: 400;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
 }
 
+#h1-poppins h1 {
+  margin: 0;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1082px) {
+  #fonts {
+    flex-direction: column;
+  }
+
+  #poppins,
+  #roboto {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #colors {
+    display: flex;
+    justify-content: stretch;
+    flex-direction: column;
+  }
+
+  .color-square {
+    width: 100%;
+  }
+}
